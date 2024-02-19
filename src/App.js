@@ -1,4 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import TaskList from './TaskList';
+import AddTaskForm from './AddTaskForm';
+import { TaskProvider } from './TaskContext';
+import './App.css';
+
+function App() {
+  return (
+    <TaskProvider>
+      <div className="App">
+        <h1>Task Manager&hearts;</h1>
+        <AddTaskForm />
+        <TaskList />
+      </div>
+    </TaskProvider>
+  );
+}
+
+export default App;
+
+
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -23,3 +44,4 @@ function App() {
 }
 
 export default App;
+*/
