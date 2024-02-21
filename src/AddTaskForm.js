@@ -20,7 +20,7 @@ function AddTaskForm() {
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Enter task"
+        placeholder="Enter task&hearts;"
       />
       <button className="add-task-btn" type="submit">Add Task&hearts;</button>
     </form>
